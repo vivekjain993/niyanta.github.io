@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQs - Holistic Healing with Dr. Niyanta</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .faq-question {
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+        .faq-answer {
+            display: none;
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,13 +32,83 @@
     <main>
         <section>
             <h2>Frequently Asked Questions</h2>
-            <p><strong>Question 1:</strong> What is holistic healing?</p>
-            <p>Answer: Holistic healing is a comprehensive approach to health care...</p>
-            <!-- Add more questions and answers here -->
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Holistic Healing with Dr. Niyanta</p>
-    </footer>
-</body>
-</html>
+            <div class="faq">
+                <div class="faq-question" onclick="toggleAnswer(1)">1. What is homeopathy?</div>
+                <div class="faq-answer" id="answer1">
+                    Homeopathy is a natural form of medicine that uses highly diluted substances to stimulate the body’s self-healing mechanisms. It is based on the principle of "like cures like," meaning a substance that causes symptoms in a healthy person can be used to treat similar symptoms in a sick person.
+                </div>
+                <div class="faq-question" onclick="toggleAnswer(2)">2. How does homeopathy work?</div>
+                <div class="faq-answer" id="answer2">
+                    Homeopathy works by stimulating the body's natural defenses. Remedies are prepared through a process of serial dilution and succussion (vigorous shaking) which enhances their therapeutic effects despite the extreme dilution.
+                </div>
+                <div class="faq-question" onclick="toggleAnswer(3)">3. What conditions can be treated with homeopathy?</div>
+                <div class="faq-answer" id="answer3">
+                    Homeopathy can address a wide range of conditions including allergies, asthma, skin conditions, digestive disorders, migraines, chronic fatigue, and emotional issues like anxiety and depression. All in all homoeopathy is suited for all health derangements at physical as well as mental plane.
+                </div>
+                <div class="faq-question" onclick="toggleAnswer(4)">4. Is homeopathy safe for children and pregnant women?</div>
+                <div class="faq-answer" id="answer4">
+                    Yes, homeopathy is considered safe for both children and pregnant women as it uses highly diluted substances, reducing the risk of side effects. However, it’s always important to consult with a qualified homeopath or healthcare provider.
+                </div>
+                <div class="faq-question" onclick="toggleAnswer(5)">5. What should I expect during my first homeopathic consultation?</div>
+                <div class="faq-answer" id="answer5">
+                    The first consultation typically involves a detailed discussion about your health, lifestyle, medical history, and emotional well-being. This will help Dr. Niyanta to understand your unique symptoms and choose the most appropriate remedy.
+                </div>
+                <div class="faq-question" onclick="toggleAnswer(6)">6. Are there any side effects of homeopathic treatments?</div>
+                <div class="faq-answer" id="answer6">
+                    Homeopathic remedies are generally considered safe with minimal risk of side effects. However, some individuals might experience a temporary worsening of symptoms, known as a homeopathic aggravation, which usually indicates that the remedy is working.
+                </div>
+                <div class="faq-question" onclick="toggleAnswer(7)">7. How will a patient know what medicines are they taking in homoeopathy?</div>
+                <div class="faq-answer" id="answer7">
+                    We aim to educate as well as treat the patient. Dr. Niyanta provides written prescriptions to all her patients. This way you will know what you are consuming and how it affects your body.
+                </div>
+                <div class="faq-question" onclick="toggleAnswer(8)">8. How long does it take for homeopathic remedies to work?</div>
+                <div class="faq-answer" id="answer8">
+                    The time it takes for remedies to work can vary depending on the individual and the condition being treated. Acute conditions may respond quickly within minutes, while chronic conditions might take longer to show improvement.
+                </div>
+                <div class="faq-question" onclick="toggleAnswer(9)">9. Can I take homeopathic remedies alongside conventional medicine?</div>
+                <div class="faq-answer" id="answer9">
+                    Yes, homeopathic remedies can often be taken alongside conventional medicines (if required). However, it’s important that you inform us about the ongoing treatments.
+                </div>
+                <div class="faq-question" onclick="toggleAnswer(10)">10. How should I store my homeopathic remedies?</div>
+                <div class="faq-answer" id="answer10">
+                    Homeopathic remedies should be stored in a cool, dry place away from strong odors, direct sunlight, and electromagnetic fields (such as microwaves and computers).
+                </div>
+                <div class="faq-question" onclick="toggleAnswer(11)">11. What is the difference between homeopathy and herbal medicine?</div>
+                <div class="faq-answer" id="answer11">
+                    Homeopathy uses highly diluted substances to stimulate the body’s healing process, while herbal medicine uses extracts from plants in their natural concentrations to treat various conditions.
+                </div>
+                <div class="faq-question" onclick="toggleAnswer(12)">12. Do homeopathic remedies interact with food or other supplements?</div>
+                <div class="faq-answer" id="answer12">
+                    Generally, homeopathic remedies do not interact with food or supplements. However, it’s advised to take them before meals and avoid strong flavors like mint or coffee shortly before and after taking the remedy. Note: There is no abstinence from such substances in general during the course of medicine.
+                </div>
+                <div class="faq-question" onclick="toggleAnswer(13)">13. How do I know if homeopathy is right for me?</div>
+                <div class="faq-answer" id="answer13">
+                    If you are looking for a natural, holistic approach to health that aims to treat the root cause of your symptoms rather than just the symptoms themselves, homeopathy might be a suitable option. Holistic Homoeo Healing by Dr. Niyanta is the perfect place for transparent and best homeopathic treatments.
+                </div>
+                <div class="faq-question" onclick="toggleAnswer(14)">14. What should I do if my symptoms worsen after taking a homeopathic remedy?</div>
+                <div class="faq-answer" id="answer14">
+                    If your symptoms worsen, this might be a temporary homeopathic aggravation. However, if you are concerned or the symptoms persist, it’s important to consult Dr. Niyanta.
+                </div>
+                <div class="faq-question" onclick="toggleAnswer(15)">15. How often do I need to visit the clinic?</div>
+                <div class="faq-answer" id="answer15">
+                    The frequency of visits depends on your individual health needs and response to treatment. Initially, you might have more frequent visits, which may become less frequent as your condition improves.
+                </div>
+                <div class="faq-question" onclick="toggleAnswer(16)">16. Is homeopathy covered by health insurance?</div>
+                <div class="faq-answer" id="answer16">
+                    Coverage for homeopathy varies by insurance plan and region. It’s best to check with your insurance provider to understand what is covered.
+                </div>
+                <div class="faq-question" onclick="toggleAnswer(17)">17. Can homeopathy help with chronic conditions?</div>
+                <div class="faq-answer" id="answer17">
+                    Yes, homeopathy is very effective for chronic conditions as it cures by addressing the underlying imbalances in the body. It aims to improve overall health and well-being over time.
+                </div>
+                <div class="faq-question" onclick="toggleAnswer(18)">18. What should I bring to my homeopathic consultation?</div>
+                <div class="faq-answer" id="answer18">
+                    Bring any relevant medical records, a list of current medications and supplements, and notes on your symptoms and health history. This information will help Dr. Niyanta to tailor the treatment to your needs.
+                </div>
+                <div class="faq-question" onclick="toggleAnswer(19)">19. How are homeopathic dosages determined?</div>
+                <div class="faq-answer" id="answer19">
+                    Dosages are determined based on the individual’s specific symptoms, overall health, and the nature of the condition being treated. The homeopath will prescribe the appropriate potency and frequency.
+                </div>
+                <div class="faq-question" onclick="toggleAnswer(20)">20. What is the philosophy behind homeopathy?</div>
+                <div class="faq-answer" id="answer20">
+                    The philosophy of homeopathy is based on the principles of treating the individual holistically, using the law of similars (like cures like), and the concept of potentization to create remedies that stimulate the
